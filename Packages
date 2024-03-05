@@ -5,17 +5,17 @@ ACCEPT_RESTRICT: *
 ARCH: arm
 CBUILD: x86_64-pc-linux-gnu
 CHOST: armv7a-hardfloat-linux-gnueabi
-CONFIG_PROTECT: /etc
+CONFIG_PROTECT: /etc /usr/share/gnupg/qualified.txt
 CONFIG_PROTECT_MASK: /etc/ca-certificates.conf /etc/env.d /etc/gconf /etc/gentoo-release /etc/sandbox.d
 ELIBC: glibc
 FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-multi-instance buildpkg buildpkg-live config-protect-if-modified distlocks ebuild-locks fixlafiles getbinpkg ipc-sandbox merge-sync multilib-strict network-sandbox news nodoc noinfo noman parallel-fetch pid-sandbox pkgdir-index-trusted preserve-libs protect-owned qa-unresolved-soname-deps sandbox sfperms strict unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync xattr
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 162
+PACKAGES: 163
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709668229
+TIMESTAMP: 1709668277
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3031,4 +3031,25 @@ SHA1: 8155b8a397ec58391735e93e509cf24517914b1a
 SIZE: 1483485
 USE: arm elibc_glibc kernel_linux secure-path sendmail
 MTIME: 1709668229
+REPO: gentoo
+
+BDEPEND: sys-devel/bison sys-devel/flex virtual/pkgconfig sys-devel/gnuconfig >=app-portage/elt-patches-20170815 >=dev-build/automake-1.16.5:1.16 || ( >=dev-build/autoconf-2.72-r1:2.72 >=dev-build/autoconf-2.71-r6:2.71 ) >=dev-build/libtool-2.4.7
+BUILD_ID: 2
+BUILD_TIME: 1709668276
+CPV: dev-libs/libnl-3.9.0
+DEFINED_PHASES: compile configure install prepare test
+EAPI: 8
+IUSE: +debug python test utils python_targets_python3_10 python_targets_python3_11 debug abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+KEYWORDS: ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux
+LICENSE: LGPL-2.1
+MD5: bfd9bb24ab8828541d84e64122834b5a
+PATH: dev-libs/libnl/libnl-3.9.0-2.xpak
+PROVIDES: arm_32: libnl-3.so.200 libnl-genl-3.so.200 libnl-idiag-3.so.200 libnl-nf-3.so.200 libnl-route-3.so.200 libnl-xfrm-3.so.200
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6
+RESTRICT: test
+SHA1: 4e9a6704b6fdb28a7d26168908f16c9ebb57f2d6
+SIZE: 415034
+SLOT: 3
+USE: arm debug elibc_glibc kernel_linux python_targets_python3_11
+MTIME: 1709668277
 REPO: gentoo
