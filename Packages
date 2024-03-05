@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 130
+PACKAGES: 131
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709667402
+TIMESTAMP: 1709667545
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -2412,4 +2412,24 @@ SHA1: b8f105e6da9b2fee6f873af71f586770c3d1b3a5
 SIZE: 227155
 USE: arm elibc_glibc kernel_linux minimal spell
 MTIME: 1709667402
+REPO: gentoo
+
+BDEPEND: acct-group/crontab virtual/pkgconfig
+BUILD_ID: 1
+BUILD_TIME: 1709667545
+CPV: sys-process/cronie-1.7.1-r1
+DEFINED_PHASES: configure install postinst
+DEPEND: !sys-process/anacron !sys-process/systemd-cron
+EAPI: 8
+IUSE: +anacron +inotify pam selinux
+KEYWORDS: ~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86
+LICENSE: ISC BSD BSD-2 GPL-2+
+MD5: b88251746a2aaaf3021e989656878aa2
+PATH: sys-process/cronie/cronie-1.7.1-r1-1.xpak
+RDEPEND: acct-group/crontab !sys-process/anacron !sys-process/systemd-cron sys-apps/debianutils >=sys-process/cronbase-0.3.2 !sys-process/bcron !sys-process/dcron !sys-process/fcron
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6
+SHA1: 0669514ebe11456df8a8c6d92b39388b506fa3ca
+SIZE: 139716
+USE: anacron arm elibc_glibc inotify kernel_linux
+MTIME: 1709667545
 REPO: gentoo
