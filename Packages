@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 74
+PACKAGES: 75
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709664840
+TIMESTAMP: 1709664851
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -1384,4 +1384,22 @@ SHA1: 9cd889fa9e87ceaeba1d9d6134c9e4172c8cc3e1
 SIZE: 339858
 USE: arm elibc_glibc kernel_linux netifrc sysvinit
 MTIME: 1709664840
+REPO: gentoo
+
+BDEPEND: virtual/pkgconfig virtual/pkgconfig virtual/pkgconfig
+BUILD_ID: 1
+BUILD_TIME: 1709664850
+CPV: net-misc/netifrc-0.7.8
+DEFINED_PHASES: compile install postinst postrm prepare
+EAPI: 8
+IUSE: +dhcp
+KEYWORDS: ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86
+LICENSE: BSD-2 GPL-2
+MD5: cbd2208e3c72ea0b7a7d173f470f1e09
+PATH: net-misc/netifrc/netifrc-0.7.8-1.xpak
+RDEPEND: sys-apps/gentoo-functions >=sys-apps/openrc-0.15 || ( net-misc/dhcpcd net-misc/dhcp[client] sys-apps/busybox )
+SHA1: a9ae14c7b43a5548accc9289419087ea318d5f5e
+SIZE: 97114
+USE: arm dhcp elibc_glibc kernel_linux
+MTIME: 1709664850
 REPO: gentoo
