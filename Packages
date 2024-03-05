@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 2
+PACKAGES: 3
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709661326
+TIMESTAMP: 1709661339
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -58,3 +58,19 @@ USE: arm elibc_glibc kernel_linux
 MTIME: 1709661309
 REPO: klipper-overlay
 
+BUILD_ID: 1
+BUILD_TIME: 1709661339
+CPV: dev-embedded/arm-trusted-firmware-2.10.0
+DEFINED_PHASES: compile install
+DEPEND: dev-embedded/u-boot dev-embedded/op-tee
+EAPI: 8
+IUSE: debug
+KEYWORDS: arm
+MD5: cfe081f39a9e02cc6fe0ed417f2e4011
+PATH: dev-embedded/arm-trusted-firmware/arm-trusted-firmware-2.10.0-1.xpak
+RDEPEND: dev-embedded/u-boot dev-embedded/op-tee
+SHA1: 181bb043bdeed364b328f4b0ba03654e1dcf84c7
+SIZE: 920096
+USE: arm elibc_glibc kernel_linux
+MTIME: 1709661339
+REPO: klipper-overlay
