@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 51
+PACKAGES: 52
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709663891
+TIMESTAMP: 1709663906
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -914,4 +914,23 @@ SHA1: 231f9a5525839da6e40b1f834177c28095ae98a2
 SIZE: 115154
 USE: arm elibc_glibc kernel_linux
 MTIME: 1709663891
+REPO: gentoo
+
+BDEPEND: >=app-portage/elt-patches-20170815
+BUILD_ID: 2
+BUILD_TIME: 1709663905
+CPV: sys-apps/attr-2.5.2-r1
+DEFINED_PHASES: compile configure install prepare test
+EAPI: 8
+IUSE: debug nls static-libs abi_x86_32 abi_x86_64 abi_x86_x32 abi_mips_n32 abi_mips_n64 abi_mips_o32 abi_s390_32 abi_s390_64
+KEYWORDS: ~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux
+LICENSE: LGPL-2.1+
+MD5: ff335a25ec121e0ef2f98f8588c8048d
+PATH: sys-apps/attr/attr-2.5.2-r1-2.xpak
+PROVIDES: arm_32: libattr.so.1
+REQUIRES: arm_32: ld-linux-armhf.so.3 libc.so.6
+SHA1: de03c181ffbe3b12d1ed7d713457c48492af556e
+SIZE: 86341
+USE: arm elibc_glibc kernel_linux
+MTIME: 1709663905
 REPO: gentoo
