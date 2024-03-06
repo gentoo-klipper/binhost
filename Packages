@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 183
+PACKAGES: 184
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709708546
+TIMESTAMP: 1709709884
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3424,4 +3424,21 @@ SHA1: 049d6d4a8196d891f7e0add735430b34b9a7c78f
 SIZE: 24479753
 USE: arm dummy1 elibc_glibc kernel_linux
 MTIME: 1709708546
+REPO: klipper-overlay
+
+BUILD_ID: 1
+BUILD_TIME: 1709709880
+CPV: dev-embedded/stm-kernel-6.1-r6
+DEFINED_PHASES: compile configure install
+DEPEND: sys-kernel/linux-firmware
+EAPI: 8
+IUSE: +dummy1
+KEYWORDS: arm
+MD5: a391564c7f93b8ceeacf458b4cbd3e62
+PATH: dev-embedded/stm-kernel/stm-kernel-6.1-r6-1.xpak
+RDEPEND: sys-kernel/linux-firmware
+SHA1: ce360faa4e7a13ce4b43ddba2b8d74160c69ddb1
+SIZE: 24393317
+USE: arm dummy1 elibc_glibc kernel_linux
+MTIME: 1709709883
 REPO: klipper-overlay
