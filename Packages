@@ -12,10 +12,10 @@ FEATURES: assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-mul
 GENTOO_MIRRORS: http://distfiles.gentoo.org
 IUSE_IMPLICIT: prefix prefix-guest prefix-stack
 KERNEL: linux
-PACKAGES: 190
+PACKAGES: 191
 PROFILE: embedded
 URI: https://github.com/gentoo-klipper/binhost/release/download/binhost-armv7a-hardfloat-linux-gnueabi
-TIMESTAMP: 1709756589
+TIMESTAMP: 1709756610
 URI: https://github.com/gentoo-klipper/binhost/releases/download/binhost-armv7a-hardfloat-linux-gnueabi
 USE: arm elibc_glibc input_devices_evdev kernel_linux minimal multicall python_single_target_python3_11 python_targets_python3_11 video_cards_fbdev zlib
 USE_EXPAND: ABI_MIPS ABI_S390 ABI_X86 ADA_TARGET ALSA_CARDS APACHE2_MODULES APACHE2_MPMS CALLIGRA_FEATURES CAMERAS COLLECTD_PLUGINS CPU_FLAGS_ARM CPU_FLAGS_PPC CPU_FLAGS_X86 CURL_SSL ELIBC FFTOOLS GPSD_PROTOCOLS GRUB_PLATFORMS INPUT_DEVICES KERNEL L10N LCD_DEVICES LIBREOFFICE_EXTENSIONS LLVM_SLOT LLVM_TARGETS LUA_SINGLE_TARGET LUA_TARGETS MONKEYD_PLUGINS NGINX_MODULES_HTTP NGINX_MODULES_MAIL NGINX_MODULES_STREAM OFFICE_IMPLEMENTATION OPENMPI_FABRICS OPENMPI_OFED_FEATURES OPENMPI_RM PHP_TARGETS POSTGRES_TARGETS PYTHON_SINGLE_TARGET PYTHON_TARGETS QEMU_SOFTMMU_TARGETS QEMU_USER_TARGETS RUBY_TARGETS SANE_BACKENDS UWSGI_PLUGINS VIDEO_CARDS VOICEMAIL_STORAGE XTABLES_ADDONS
@@ -3557,4 +3557,24 @@ SIZE: 691141
 SLOT: 1/11.6.15.2
 USE: arm cxx elibc_glibc kernel_linux python_targets_python3_11
 MTIME: 1709756588
+REPO: gentoo
+
+BDEPEND: virtual/pkgconfig
+BUILD_ID: 1
+BUILD_TIME: 1709756610
+CPV: app-portage/portage-utils-0.96.1
+DEFINED_PHASES: configure prepare setup
+DEPEND: app-crypt/gpgme:1/11.6.15.2= app-crypt/libb2:0/0= dev-libs/openssl:0/3= sys-libs/zlib:0/1= dev-libs/openssl:0/3=
+EAPI: 8
+IUSE: openmp +qmanifest +qtegrity static
+KEYWORDS: ~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~arm64-macos ~ppc-macos ~x64-macos ~x64-solaris
+LICENSE: GPL-2
+MD5: ea1af2d5cfdc1aee30ffa871e2318493
+PATH: app-portage/portage-utils/portage-utils-0.96.1-1.xpak
+RDEPEND: app-crypt/gpgme:1/11.6.15.2= app-crypt/libb2:0/0= dev-libs/openssl:0/3= sys-libs/zlib:0/1= dev-libs/openssl:0/3=
+REQUIRES: arm_32: ld-linux-armhf.so.3 libb2.so.1 libc.so.6 libcrypto.so.3 libgpgme.so.11 libz.so.1
+SHA1: 303bab95d3e01aa5c3695a6eb275d21183ae7b07
+SIZE: 213507
+USE: arm elibc_glibc kernel_linux qmanifest qtegrity
+MTIME: 1709756610
 REPO: gentoo
